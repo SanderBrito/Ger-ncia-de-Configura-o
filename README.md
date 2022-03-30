@@ -1,3 +1,3 @@
 # Gerencia-de-Configuracao
 
-## Alunos: Leonardo Garcia | Sander Henrique
+## Alunos: Leonardo Garcia | Sander Henrique | Felipe Bueno
