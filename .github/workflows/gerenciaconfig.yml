@@ -7,7 +7,7 @@ jobs:
     runs-on: windows
     steps:
       - name: Run a one-line script
-      run: echo Hello, world!
+        run: echo Hello, world!
       
   deploy-dev:
     runs-on: windows
