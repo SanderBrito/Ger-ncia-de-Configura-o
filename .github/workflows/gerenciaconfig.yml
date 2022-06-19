@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
+       - name: Run a one-line script
+       - run: echo Hello, world!
       
   deploy-dev:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
     needs: build
     steps:
       - name: Run a one-line script
-        run: echo Deploy Dev
+      - run: echo Deploy Dev
         
   deploy-prd:
     runs-on: ubuntu-latest
@@ -27,4 +27,4 @@ jobs:
     needs: deploy-dev
     steps:
       - name: Run a one-line script
-        run: echo deploy PRD      
+      - run: echo deploy PRD      
