@@ -1,0 +1,30 @@
+name: 'Gerencia'
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows
+    steps:
+      - name: Run a one-line script
+      run: echo Hello, world!
+      
+  deploy-dev:
+    runs-on: windows
+    environment:
+      name: dev
+      url: 'gerenciaconf.com'
+    needs: build
+    steps:
+      - name: Run a one-line script
+        run: echo deploy DEV
+        
+  deploy-prd:
+    runs-on: windows
+    environment:
+      name: dev
+      url: 'gerenciaconf.com'
+    needs: deploy-dev
+    steps:
+      - name: Run a one-line script
+        run: echo deploy PRD      
